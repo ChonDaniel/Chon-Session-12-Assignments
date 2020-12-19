@@ -1,0 +1,12 @@
+with open('scores', 'r') as file:
+    score = file.read().split()
+
+print(score)
+
+sumVal = sum(int(score))
+lenVal = len(int(score))
+avgVal = sumVal/lenVal
+
+print("\nHighest score: " + max(score))
+print("\nLowest score: " + min(score))
+print("\nAverage score: " + avgVal)
